@@ -1,0 +1,127 @@
+\hypertarget{class_c_modulo_n_digit}{}\doxysection{C\+Modulo\+N\+Digit Class Reference}
+\label{class_c_modulo_n_digit}\index{CModuloNDigit@{CModuloNDigit}}
+
+
+{\ttfamily \#include $<$Modulo\+N\+Digit.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_modulo_n_digit_a0777ff65e8def136edc79e08758fe27a}{C\+Modulo\+N\+Digit}} (\mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}} $\ast$p)
+\item 
+virtual \mbox{\hyperlink{class_c_modulo_n_digit_a3bc11e712f751e1522c3098c66a9f713}{$\sim$\+C\+Modulo\+N\+Digit}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_digit_a1ea6e72e4c1e8bb312370c38d6e5a4f1}{operator++}} (int)
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_digit_acb1b3a0a943341ac73ab2e0489bb00e4}{operator++}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_digit_aee87ef929bf2bde406d19bff716a103d}{print}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}} $\ast$ \mbox{\hyperlink{class_c_modulo_n_digit_a8fb80a11fa9957531cab1cb1adf328c7}{m\+\_\+p\+N\+Counter}}
+\item 
+unsigned short $\ast$ \mbox{\hyperlink{class_c_modulo_n_digit_a7fc4d257564d9d40a048573aa29e2d20}{m\+\_\+counter\+Value}}
+\item 
+unsigned short \mbox{\hyperlink{class_c_modulo_n_digit_ae7c378e6269bdcf7f9babc19777fcb69}{m\+\_\+\+Ndigits}} = 1
+\item 
+unsigned short \mbox{\hyperlink{class_c_modulo_n_digit_aa73dab50bb124d8e0cc5aa4c9952d4ee}{m\+\_\+counter\+Type}} = 10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a Module\+N\+Digit which ask user for number of digits to present counter value in each counter increment. User can select one of predefined base type for representation of current counter. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_digit_a0777ff65e8def136edc79e08758fe27a}\label{class_c_modulo_n_digit_a0777ff65e8def136edc79e08758fe27a}} 
+\index{CModuloNDigit@{CModuloNDigit}!CModuloNDigit@{CModuloNDigit}}
+\index{CModuloNDigit@{CModuloNDigit}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{CModuloNDigit()}{CModuloNDigit()}}
+{\footnotesize\ttfamily C\+Modulo\+N\+Digit\+::\+C\+Modulo\+N\+Digit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Constructor receives a pointer from Module\+N\+Counter in order to set N counter type and number of digits for counter. It also allocates a 1D dynamic memory array to store current counter value for printing. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$p} & is a pointer received from C\+Module\+N\+Counter Class. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_digit_a3bc11e712f751e1522c3098c66a9f713}\label{class_c_modulo_n_digit_a3bc11e712f751e1522c3098c66a9f713}} 
+\index{CModuloNDigit@{CModuloNDigit}!````~CModuloNDigit@{$\sim$CModuloNDigit}}
+\index{````~CModuloNDigit@{$\sim$CModuloNDigit}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{$\sim$CModuloNDigit()}{~CModuloNDigit()}}
+{\footnotesize\ttfamily C\+Modulo\+N\+Digit\+::$\sim$\+C\+Modulo\+N\+Digit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Frees the memory allocated by this class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_digit_acb1b3a0a943341ac73ab2e0489bb00e4}\label{class_c_modulo_n_digit_acb1b3a0a943341ac73ab2e0489bb00e4}} 
+\index{CModuloNDigit@{CModuloNDigit}!operator++@{operator++}}
+\index{operator++@{operator++}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Digit\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+++ operator overloading which is used for prefix increment operation. \mbox{\Hypertarget{class_c_modulo_n_digit_a1ea6e72e4c1e8bb312370c38d6e5a4f1}\label{class_c_modulo_n_digit_a1ea6e72e4c1e8bb312370c38d6e5a4f1}} 
+\index{CModuloNDigit@{CModuloNDigit}!operator++@{operator++}}
+\index{operator++@{operator++}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Digit\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+++ operator overloading which is used for postfix increment operation. \mbox{\Hypertarget{class_c_modulo_n_digit_aee87ef929bf2bde406d19bff716a103d}\label{class_c_modulo_n_digit_aee87ef929bf2bde406d19bff716a103d}} 
+\index{CModuloNDigit@{CModuloNDigit}!print@{print}}
+\index{print@{print}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Digit\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints current value of counter according to selected number of digits and type.. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_digit_aa73dab50bb124d8e0cc5aa4c9952d4ee}\label{class_c_modulo_n_digit_aa73dab50bb124d8e0cc5aa4c9952d4ee}} 
+\index{CModuloNDigit@{CModuloNDigit}!m\_counterType@{m\_counterType}}
+\index{m\_counterType@{m\_counterType}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{m\_counterType}{m\_counterType}}
+{\footnotesize\ttfamily unsigned short C\+Modulo\+N\+Digit\+::m\+\_\+counter\+Type = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+counter\+Type} & is a short unsigned integer variable to store type of counter entered by user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_digit_a7fc4d257564d9d40a048573aa29e2d20}\label{class_c_modulo_n_digit_a7fc4d257564d9d40a048573aa29e2d20}} 
+\index{CModuloNDigit@{CModuloNDigit}!m\_counterValue@{m\_counterValue}}
+\index{m\_counterValue@{m\_counterValue}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{m\_counterValue}{m\_counterValue}}
+{\footnotesize\ttfamily unsigned short$\ast$ C\+Modulo\+N\+Digit\+::m\+\_\+counter\+Value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+n\+Counter} & presents a 1D dynamic memory to store value of counter received from Module\+N\+Counter Class instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_digit_ae7c378e6269bdcf7f9babc19777fcb69}\label{class_c_modulo_n_digit_ae7c378e6269bdcf7f9babc19777fcb69}} 
+\index{CModuloNDigit@{CModuloNDigit}!m\_Ndigits@{m\_Ndigits}}
+\index{m\_Ndigits@{m\_Ndigits}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{m\_Ndigits}{m\_Ndigits}}
+{\footnotesize\ttfamily unsigned short C\+Modulo\+N\+Digit\+::m\+\_\+\+Ndigits = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+\+Ndigits} & is a short unsigned integer variable to store the number of digits entered by user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_digit_a8fb80a11fa9957531cab1cb1adf328c7}\label{class_c_modulo_n_digit_a8fb80a11fa9957531cab1cb1adf328c7}} 
+\index{CModuloNDigit@{CModuloNDigit}!m\_pNCounter@{m\_pNCounter}}
+\index{m\_pNCounter@{m\_pNCounter}!CModuloNDigit@{CModuloNDigit}}
+\doxysubsubsection{\texorpdfstring{m\_pNCounter}{m\_pNCounter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}}$\ast$ C\+Modulo\+N\+Digit\+::m\+\_\+p\+N\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+n\+Counter} & receives a pointer from Module\+N\+Counter in order to set the number of digits and type of counter. \mbox{\hyperlink{}{aggregation}}\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_modulo_n_digit_8h}{Modulo\+N\+Digit.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_modulo_n_digit_8cpp}{Modulo\+N\+Digit.\+cpp}}\end{DoxyCompactItemize}

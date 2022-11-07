@@ -1,0 +1,295 @@
+\hypertarget{class_c_modulo_n_counter}{}\doxysection{C\+Modulo\+N\+Counter Class Reference}
+\label{class_c_modulo_n_counter}\index{CModuloNCounter@{CModuloNCounter}}
+
+
+{\ttfamily \#include $<$Modulo\+N\+Counter.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_modulo_n_counter_a9d2698be2a320a956c8f9696efbfc7a9}{C\+Modulo\+N\+Counter}} (unsigned short curcount, unsigned short maxcount)
+\item 
+\mbox{\hyperlink{class_c_modulo_n_counter_a26f63734772c74b4a2ff11b821475540}{C\+Modulo\+N\+Counter}} (const \mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}} \&orig)
+\item 
+virtual \mbox{\hyperlink{class_c_modulo_n_counter_a866fa95890fa9d779a5fab933c6ff04a}{$\sim$\+C\+Modulo\+N\+Counter}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_af4be4e3754cbce5b93748a75368a2469}{counter}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_a3f66983f527a16c9f6758d87174efefe}{operator++}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_ad9ca8420c47353e1bd93590d0673de75}{print}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_ad637cdd7d0ff8a877df0a7884cd93a90}{set\+Counter\+Type}} (unsigned short type)
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_a807783fff663176c52b6315b77f00789}{set\+Counter\+Digits}} (unsigned short digits)
+\item 
+unsigned short $\ast$ \mbox{\hyperlink{class_c_modulo_n_counter_a4346367563cb88646b9944451b6462d6}{get\+Counter\+Value}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cf}{m\+\_\+counter\+Type}} \{ \mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfa91504b968f4946fed6a5c64b0d173b9e}{binary}} = 2, 
+\mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfa5b1ac2c4577dd0cb6f97a52f357a5972}{octal}} = 8, 
+\mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfad6d60f7fb40824b6e5d461bad0e9ee46}{decimal}} = 10, 
+\mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfaeabd88b3de763b647b97436732a71f92}{hexadecimal}} = 16
+ \}
+\item 
+typedef enum \mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cf}{m\+\_\+counter\+Type}} \mbox{\hyperlink{class_c_modulo_n_counter_a8b8ce4c83dd3e757113593c1e9a4b7d2}{m\+\_\+counter\+Type\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_a2d9263eff1bfd601d478a7a0ce3672e4}{binary\+Counter}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_abe5d29e1ce62d10ac8b7d26c992e009e}{octal\+Counter}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_ab3527eececac77df6641037f5a05ee5a}{decimal\+Counter}} ()
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_a4bc0a02f7876ef00829af7157fc0a3ae}{hexa\+Counter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short $\ast$ \mbox{\hyperlink{class_c_modulo_n_counter_a48901a1a57ad2d8e040f8a6fec6da50c}{m\+\_\+n\+Digit\+Conunter}}
+\item 
+unsigned short \mbox{\hyperlink{class_c_modulo_n_counter_acd086d04da15cce22041ba696334cb98}{m\+\_\+max\+Counter\+Value}} = 10
+\item 
+unsigned short \mbox{\hyperlink{class_c_modulo_n_counter_a2aac27bb9d869f0ee9c23a20902f624e}{m\+\_\+\+Ndigits}} = 1
+\item 
+unsigned short \mbox{\hyperlink{class_c_modulo_n_counter_add3452fffed380c61d60a4ff571034c8}{m\+\_\+current\+Value}} = 0
+\item 
+unsigned short \mbox{\hyperlink{class_c_modulo_n_counter_a0471ea052d94e07f99976273403b9c76}{m\+\_\+starting\+Counter\+Value}} = 0
+\item 
+\mbox{\hyperlink{class_c_modulo_n_counter_a8b8ce4c83dd3e757113593c1e9a4b7d2}{m\+\_\+counter\+Type\+\_\+t}} \mbox{\hyperlink{class_c_modulo_n_counter_a55aab4807b7f5fd5fcedfd3f162aa70c}{counter\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_modulo_n_counter_a5596684aa01ff1c4ecc4bde70d3e2184}{operator++}} (\mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}} \&v, int)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a Module N Counter which starts counting from predefined starting point and N define the maximum number of counting entered by user 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a8b8ce4c83dd3e757113593c1e9a4b7d2}\label{class_c_modulo_n_counter_a8b8ce4c83dd3e757113593c1e9a4b7d2}} 
+\index{CModuloNCounter@{CModuloNCounter}!m\_counterType\_t@{m\_counterType\_t}}
+\index{m\_counterType\_t@{m\_counterType\_t}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{m\_counterType\_t}{m\_counterType\_t}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cf}{m\+\_\+counter\+Type}} \mbox{\hyperlink{class_c_modulo_n_counter_a8b8ce4c83dd3e757113593c1e9a4b7d2}{C\+Modulo\+N\+Counter\+::m\+\_\+counter\+Type\+\_\+t}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cf}\label{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cf}} 
+\index{CModuloNCounter@{CModuloNCounter}!m\_counterType@{m\_counterType}}
+\index{m\_counterType@{m\_counterType}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{m\_counterType}{m\_counterType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cf}{C\+Modulo\+N\+Counter\+::m\+\_\+counter\+Type}}\hspace{0.3cm}{\ttfamily [private]}}
+
+In order to distinguish the type of counter, enumeration type is defined here. 
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+counter\+Type} & is enumeration for different types of counter (binary, octal, decimal, hexadecimal) selected by user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{binary@{binary}!CModuloNCounter@{CModuloNCounter}}\index{CModuloNCounter@{CModuloNCounter}!binary@{binary}}}\mbox{\Hypertarget{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfa91504b968f4946fed6a5c64b0d173b9e}\label{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfa91504b968f4946fed6a5c64b0d173b9e}} 
+binary&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{octal@{octal}!CModuloNCounter@{CModuloNCounter}}\index{CModuloNCounter@{CModuloNCounter}!octal@{octal}}}\mbox{\Hypertarget{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfa5b1ac2c4577dd0cb6f97a52f357a5972}\label{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfa5b1ac2c4577dd0cb6f97a52f357a5972}} 
+octal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{decimal@{decimal}!CModuloNCounter@{CModuloNCounter}}\index{CModuloNCounter@{CModuloNCounter}!decimal@{decimal}}}\mbox{\Hypertarget{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfad6d60f7fb40824b6e5d461bad0e9ee46}\label{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfad6d60f7fb40824b6e5d461bad0e9ee46}} 
+decimal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{hexadecimal@{hexadecimal}!CModuloNCounter@{CModuloNCounter}}\index{CModuloNCounter@{CModuloNCounter}!hexadecimal@{hexadecimal}}}\mbox{\Hypertarget{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfaeabd88b3de763b647b97436732a71f92}\label{class_c_modulo_n_counter_ae5d48fc9298e8d749e6c6ba50f12d6cfaeabd88b3de763b647b97436732a71f92}} 
+hexadecimal&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a9d2698be2a320a956c8f9696efbfc7a9}\label{class_c_modulo_n_counter_a9d2698be2a320a956c8f9696efbfc7a9}} 
+\index{CModuloNCounter@{CModuloNCounter}!CModuloNCounter@{CModuloNCounter}}
+\index{CModuloNCounter@{CModuloNCounter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{CModuloNCounter()}{CModuloNCounter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Modulo\+N\+Counter\+::\+C\+Modulo\+N\+Counter (\begin{DoxyParamCaption}\item[{unsigned short}]{curcount,  }\item[{unsigned short}]{maxcount }\end{DoxyParamCaption})}
+
+Constructor of C\+Module\+N\+Counter which allocate a 1D memory array to store current value of counter 
+\begin{DoxyParams}{Parameters}
+{\em curcount} & starting number for counter which can be set by user. \\
+\hline
+{\em maxcount} & maximum number of counting which can be defined by user. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a26f63734772c74b4a2ff11b821475540}\label{class_c_modulo_n_counter_a26f63734772c74b4a2ff11b821475540}} 
+\index{CModuloNCounter@{CModuloNCounter}!CModuloNCounter@{CModuloNCounter}}
+\index{CModuloNCounter@{CModuloNCounter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{CModuloNCounter()}{CModuloNCounter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Modulo\+N\+Counter\+::\+C\+Modulo\+N\+Counter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}} \&}]{orig }\end{DoxyParamCaption})}
+
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em orig} & the object to copy from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a866fa95890fa9d779a5fab933c6ff04a}\label{class_c_modulo_n_counter_a866fa95890fa9d779a5fab933c6ff04a}} 
+\index{CModuloNCounter@{CModuloNCounter}!````~CModuloNCounter@{$\sim$CModuloNCounter}}
+\index{````~CModuloNCounter@{$\sim$CModuloNCounter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{$\sim$CModuloNCounter()}{~CModuloNCounter()}}
+{\footnotesize\ttfamily C\+Modulo\+N\+Counter\+::$\sim$\+C\+Modulo\+N\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Frees the memory allocated by this class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a2d9263eff1bfd601d478a7a0ce3672e4}\label{class_c_modulo_n_counter_a2d9263eff1bfd601d478a7a0ce3672e4}} 
+\index{CModuloNCounter@{CModuloNCounter}!binaryCounter@{binaryCounter}}
+\index{binaryCounter@{binaryCounter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{binaryCounter()}{binaryCounter()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::binary\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+binary\+Counter is a private method which only used by counter and operation methods. It receives the current value of N Counters and converts it to binary form with number of digits which entered by user. \mbox{\Hypertarget{class_c_modulo_n_counter_af4be4e3754cbce5b93748a75368a2469}\label{class_c_modulo_n_counter_af4be4e3754cbce5b93748a75368a2469}} 
+\index{CModuloNCounter@{CModuloNCounter}!counter@{counter}}
+\index{counter@{counter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{counter()}{counter()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increase the current value and if the number of counting becomes more than maximum number of counting, the current counter value will reset to stating value. \mbox{\Hypertarget{class_c_modulo_n_counter_ab3527eececac77df6641037f5a05ee5a}\label{class_c_modulo_n_counter_ab3527eececac77df6641037f5a05ee5a}} 
+\index{CModuloNCounter@{CModuloNCounter}!decimalCounter@{decimalCounter}}
+\index{decimalCounter@{decimalCounter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{decimalCounter()}{decimalCounter()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::decimal\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+decimal\+Counter is a private method which only used by counter and operation methods. It receives the current value of N Counter and converts it to decimal form with number of digits which entered by user. \mbox{\Hypertarget{class_c_modulo_n_counter_a4346367563cb88646b9944451b6462d6}\label{class_c_modulo_n_counter_a4346367563cb88646b9944451b6462d6}} 
+\index{CModuloNCounter@{CModuloNCounter}!getCounterValue@{getCounterValue}}
+\index{getCounterValue@{getCounterValue}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{getCounterValue()}{getCounterValue()}}
+{\footnotesize\ttfamily unsigned short $\ast$ C\+Modulo\+N\+Counter\+::get\+Counter\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a pointer to current value on dynamic memory to Module\+N\+Digits class to print. \mbox{\Hypertarget{class_c_modulo_n_counter_a4bc0a02f7876ef00829af7157fc0a3ae}\label{class_c_modulo_n_counter_a4bc0a02f7876ef00829af7157fc0a3ae}} 
+\index{CModuloNCounter@{CModuloNCounter}!hexaCounter@{hexaCounter}}
+\index{hexaCounter@{hexaCounter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{hexaCounter()}{hexaCounter()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::hexa\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+hexa\+Counter is a private method which only used by counter and operation methods. It receives the current value of N Counter and converts it to hexadecimal form with number of digits which entered by user. \mbox{\Hypertarget{class_c_modulo_n_counter_abe5d29e1ce62d10ac8b7d26c992e009e}\label{class_c_modulo_n_counter_abe5d29e1ce62d10ac8b7d26c992e009e}} 
+\index{CModuloNCounter@{CModuloNCounter}!octalCounter@{octalCounter}}
+\index{octalCounter@{octalCounter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{octalCounter()}{octalCounter()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::octal\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+octal\+Counter is a private method which only used by counter and operation methods. It receives the current value of N Counter and converts it to octal form with number of digits which entered by user. \mbox{\Hypertarget{class_c_modulo_n_counter_a3f66983f527a16c9f6758d87174efefe}\label{class_c_modulo_n_counter_a3f66983f527a16c9f6758d87174efefe}} 
+\index{CModuloNCounter@{CModuloNCounter}!operator++@{operator++}}
+\index{operator++@{operator++}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+++ operator overloading which is used for prefix increment operation. \mbox{\Hypertarget{class_c_modulo_n_counter_ad9ca8420c47353e1bd93590d0673de75}\label{class_c_modulo_n_counter_ad9ca8420c47353e1bd93590d0673de75}} 
+\index{CModuloNCounter@{CModuloNCounter}!print@{print}}
+\index{print@{print}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the current value of counter according type, number of digits. \mbox{\Hypertarget{class_c_modulo_n_counter_a807783fff663176c52b6315b77f00789}\label{class_c_modulo_n_counter_a807783fff663176c52b6315b77f00789}} 
+\index{CModuloNCounter@{CModuloNCounter}!setCounterDigits@{setCounterDigits}}
+\index{setCounterDigits@{setCounterDigits}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{setCounterDigits()}{setCounterDigits()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::set\+Counter\+Digits (\begin{DoxyParamCaption}\item[{unsigned short}]{digits }\end{DoxyParamCaption})}
+
+Module\+N\+Digit uses this method to pass the number of digits for N Counter. \mbox{\Hypertarget{class_c_modulo_n_counter_ad637cdd7d0ff8a877df0a7884cd93a90}\label{class_c_modulo_n_counter_ad637cdd7d0ff8a877df0a7884cd93a90}} 
+\index{CModuloNCounter@{CModuloNCounter}!setCounterType@{setCounterType}}
+\index{setCounterType@{setCounterType}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{setCounterType()}{setCounterType()}}
+{\footnotesize\ttfamily void C\+Modulo\+N\+Counter\+::set\+Counter\+Type (\begin{DoxyParamCaption}\item[{unsigned short}]{type }\end{DoxyParamCaption})}
+
+Module\+N\+Digit uses this method to pass the type of counter. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a5596684aa01ff1c4ecc4bde70d3e2184}\label{class_c_modulo_n_counter_a5596684aa01ff1c4ecc4bde70d3e2184}} 
+\index{CModuloNCounter@{CModuloNCounter}!operator++@{operator++}}
+\index{operator++@{operator++}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{operator++}{operator++}}
+{\footnotesize\ttfamily void operator++ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_modulo_n_counter}{C\+Modulo\+N\+Counter}} \&}]{v,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Makes postfix increment operator function as a friend for Module\+N\+Counter class.
+
+Friend function for ++ operator overloading which is used for postfix increment operation. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a55aab4807b7f5fd5fcedfd3f162aa70c}\label{class_c_modulo_n_counter_a55aab4807b7f5fd5fcedfd3f162aa70c}} 
+\index{CModuloNCounter@{CModuloNCounter}!counterType@{counterType}}
+\index{counterType@{counterType}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{counterType}{counterType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_modulo_n_counter_a8b8ce4c83dd3e757113593c1e9a4b7d2}{m\+\_\+counter\+Type\+\_\+t}} C\+Modulo\+N\+Counter\+::counter\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em counter\+Type} & is enum type variable to store type of counter which set from Module\+N\+Digit class. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_counter_add3452fffed380c61d60a4ff571034c8}\label{class_c_modulo_n_counter_add3452fffed380c61d60a4ff571034c8}} 
+\index{CModuloNCounter@{CModuloNCounter}!m\_currentValue@{m\_currentValue}}
+\index{m\_currentValue@{m\_currentValue}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{m\_currentValue}{m\_currentValue}}
+{\footnotesize\ttfamily unsigned short C\+Modulo\+N\+Counter\+::m\+\_\+current\+Value = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+current\+Value} & keeps current value of counter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_counter_acd086d04da15cce22041ba696334cb98}\label{class_c_modulo_n_counter_acd086d04da15cce22041ba696334cb98}} 
+\index{CModuloNCounter@{CModuloNCounter}!m\_maxCounterValue@{m\_maxCounterValue}}
+\index{m\_maxCounterValue@{m\_maxCounterValue}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{m\_maxCounterValue}{m\_maxCounterValue}}
+{\footnotesize\ttfamily unsigned short C\+Modulo\+N\+Counter\+::m\+\_\+max\+Counter\+Value = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+\+Max\+Counter\+Value} & store maximum number of counting by N counter. The predefined value of m\+\_\+\+Max\+Counter\+Value is set to 10, means it starts from starting point and counts 10 times. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a48901a1a57ad2d8e040f8a6fec6da50c}\label{class_c_modulo_n_counter_a48901a1a57ad2d8e040f8a6fec6da50c}} 
+\index{CModuloNCounter@{CModuloNCounter}!m\_nDigitConunter@{m\_nDigitConunter}}
+\index{m\_nDigitConunter@{m\_nDigitConunter}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{m\_nDigitConunter}{m\_nDigitConunter}}
+{\footnotesize\ttfamily unsigned short$\ast$ C\+Modulo\+N\+Counter\+::m\+\_\+n\+Digit\+Conunter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Digit\+Conunter} & is a pointer which shows a 1D dynamic memory allocated to store current value of N Digits Counter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a2aac27bb9d869f0ee9c23a20902f624e}\label{class_c_modulo_n_counter_a2aac27bb9d869f0ee9c23a20902f624e}} 
+\index{CModuloNCounter@{CModuloNCounter}!m\_Ndigits@{m\_Ndigits}}
+\index{m\_Ndigits@{m\_Ndigits}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{m\_Ndigits}{m\_Ndigits}}
+{\footnotesize\ttfamily unsigned short C\+Modulo\+N\+Counter\+::m\+\_\+\+Ndigits = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+\+Ndigits} & receive number of digits from Module\+N\+Digit. It is predefined value is 1, means one digit counter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_modulo_n_counter_a0471ea052d94e07f99976273403b9c76}\label{class_c_modulo_n_counter_a0471ea052d94e07f99976273403b9c76}} 
+\index{CModuloNCounter@{CModuloNCounter}!m\_startingCounterValue@{m\_startingCounterValue}}
+\index{m\_startingCounterValue@{m\_startingCounterValue}!CModuloNCounter@{CModuloNCounter}}
+\doxysubsubsection{\texorpdfstring{m\_startingCounterValue}{m\_startingCounterValue}}
+{\footnotesize\ttfamily unsigned short C\+Modulo\+N\+Counter\+::m\+\_\+starting\+Counter\+Value = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+starting\+Counter\+Value} & can be entered by user to define the start number of counting. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+my\+Code/\mbox{\hyperlink{_modulo_n_counter_8h}{Modulo\+N\+Counter.\+h}}\item 
+my\+Code/\mbox{\hyperlink{_modulo_n_counter_8cpp}{Modulo\+N\+Counter.\+cpp}}\end{DoxyCompactItemize}
